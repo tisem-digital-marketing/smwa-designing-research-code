@@ -15,10 +15,17 @@ library(ggrepel)
 # --- Brown Hair and Wages ---- # 
 
 # Simulate the DGP
-set.seed(YOUR_CODE_HERE)
+set.seed(987987)
 
 df <- 
-    YOUR_CODE_HERE
+    tibble(College = runif(5000) < .3) %>%
+    mutate(Hair = case_when(
+        runif(5000) < .2+.8*.4*(!College) ~ "Brown",
+        TRUE ~ "Other Color"
+    ),
+    logIncome = .1*(Hair == "Brown") + 
+        .2*College + rnorm(5000) + 5 
+    )
 
 # Plotting income by hair color
 df %>% 
@@ -37,11 +44,14 @@ df %>%
 
 # Learning about the DGP -- going in blind
 df %>%
-    YOUR_CODE_HERE
+    group_by(Hair) %>%
+    summarize(log_income = round(mean(logIncome),3)) 
 
 # Learning about the DGP -- using what we know
 df %>%
-    YOUR_CODE_HERE
+    filter(College) %>%
+    group_by(Hair) %>%
+    summarize(`Log Income` = round(mean(logIncome),3))
 
 # Simulation
 # function to simulate data
@@ -110,16 +120,13 @@ comparison %>%
 # --- Avocados --- #
 # Load and select datapoints 
 avocados <- 
-    YOUR_CODE_HERE %>%
+    read_csv("data/avocado.csv") %>%
     janitor::clean_names() %>%
     filter(region == "California",
            type == "conventional")
 
-# Plot all avocados data
-ggplot(avocados, 
-       aes(y = YOUR_CODE_HERE,
-           x = YOUR_CODE_HERE)
-       ) + 
+
+ggplot(avocados, aes(y = total_volume/1e6, x = average_price)) + 
     geom_point(size = 1)+
     theme_bw() + 
     theme(text         = element_text(size = 16),
@@ -137,7 +144,7 @@ avocados %>%
     ggplot(aes(y = total_volume/1e6, 
                x = average_price, 
                alpha = isolate)
-           ) + 
+    ) + 
     geom_point(size = 2)+
     theme_bw()+
     guides(alpha = "none") + 
