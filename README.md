@@ -3,17 +3,11 @@
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![lifecycle](https://img.shields.io/badge/version-2024-red.svg)]()
 
-## Learning Objectives
+## What this repo is for
 
-By the end of this class you should be able to:
+Contains the code associated with the lecture ["The Design of Empirical Research"](https://tisem-digital-marketing.github.io/2024-smwa/assets/lectures/week-01/l02_empirical_research_design_student.pdf).
 
-* Sample members of a social network using an initial set of seed users
-* Explain various descriptive measures of a network
-* Compute descriptive statistics of a sample network
-* Define network centrality
-* Compute node's network centrality
-* Explain intuitively how Louvain and Infomap algorithms split a network into communities
-* Divide a network into communities using Louvain and Infomap algorithms
+See the lecture slides for learning goals associated with this class.
 
 ## Instructions for Students (Before Coming to Class)
 
@@ -29,17 +23,17 @@ git clone git@github.com:tisem-digital-marketing/smwa-designing-research-code.gi
 Once you have cloned the files, open the cloned repository in RStudio as an RStudio project and use the empty R scripts to follow along with the lecture as we work through material.
 
 At the conclusion of the class, the course instructor's scripts are made available in the branch `instructor`.
-Recall that you can switch between branches using the `git branch <BRANCHNAME>` command in a terminal.
+Recall that you can switch between branches using the `git checkout <BRANCHNAME>` command in a terminal.
 Thus to switch to the instructor branch:
 
 ```{bash}
-git branch instructor
+git checkout instructor
 ```
 
 And to switch back to the branch that you worked through live in class:
 
 ```{bash}
-git branch main
+git checkout main
 ```
 
 *NOTE*: Git does not like you to switch branches with uncommitted changes.
