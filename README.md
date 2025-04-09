@@ -1,11 +1,11 @@
 # Social Media and Web Analytics: Empirical Research Design
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![lifecycle](https://img.shields.io/badge/version-2024-red.svg)]()
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![lifecycle](https://img.shields.io/badge/version-2025-red.svg)]()
 
 ## What this repo is for
 
-Contains the code associated with the lecture ["The Design of Empirical Research"](https://tisem-digital-marketing.github.io/2024-smwa/assets/lectures/week-01/l02_empirical_research_design_student.pdf).
+Contains the code associated with the lecture ["The Design of Empirical Research"](https://tisem-digital-marketing.github.io/2025-smwa/assets/lectures/week-01/l02_empirical_research_design_student.pdf).
 
 See the lecture slides for learning goals associated with this class.
 
@@ -48,9 +48,9 @@ Install these packages **before** coming to class.
 ## Meta-Information
 
 * Module Maintainer: Lachlan Deer (`@lachlandeer`)
-* Course: [Social Media and Web Analytics](https://tisem-digital-marketing.github.io/2024-smwa)
+* Course: [Social Media and Web Analytics](https://tisem-digital-marketing.github.io/2025-smwa)
 * Institute: Dept of Marketing, Tilburg University
-* Current Version: [2024 edition](https://tisem-digital-marketing.github.io/2024-smwa)
+* Current Version: [2025 edition](https://tisem-digital-marketing.github.io/2025-smwa)
 
 ## License
 
@@ -58,13 +58,13 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 Inter
 
 ## Suggested Citation
 
-Deer, Lachlan. 2024. Social Media and Web Analytics: Empirical Research Design -- Code. Tilburg University. url = "https://github.com/tisem-digital-marketing/smwa-designing-research-code"
+Deer, Lachlan. 2025. Social Media and Web Analytics: Empirical Research Design -- Code. Tilburg University. url = "https://github.com/tisem-digital-marketing/smwa-designing-research-code"
 
 ```{r, engine='out', eval = FALSE}
-@misc{smwa-researchdesign-2024,
+@misc{smwa-researchdesign-2025,
       title={"Social Media and Web Analytics: Empirical Research Design -- Code"},
       author={Lachlan Deer},
-      year={2024},
+      year={2025},
       url = "https://github.com/tisem-digital-marketing/smwa-designing-research-code"
 }
 ```
